@@ -8,4 +8,5 @@ Implementation of the recent minimalist form repo, AES Encrypt/Decrypt using HTM
 *   [Sleep Function](https://www.javatpoint.com/javascript-sleep#:~:text=The%20programming%20languages%20such%20as%20PHP%20and%20C,languages%2C%20JavaScript%20doesn%27t%20have%20any%20sleep%20%28%29%20function.)
 *   And many other sources...
 
+[Live Preview Here ( w/ github.com/htmlpreview )](https://htmlpreview.github.io/?https://github.com/jxxvxs/AES-crypt-w-MinForm-implementation/blob/main/index.html)
 I do not own anything.
