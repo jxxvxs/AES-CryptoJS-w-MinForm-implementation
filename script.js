@@ -1,8 +1,3 @@
-function tanggalTest() {
-    var test = Date()
-    document.getElementById('Tanggal').innerHTML=test;
-}
-
 function encrypt() {
     var encrypted = CryptoJS.AES.encrypt(document.getElementById("text_cr").value, document.getElementById("key_cr").value);   
     document.querySelector("#result").value = encrypted;
@@ -15,17 +10,6 @@ function decrypt() {
     {
         tempAlert("Ada yang salah, coba perhatikan lagi!",1000);
     }
-}
-
-function tempAlert(msg,duration) {
-    var el = document.createElement("div");
-    var styleNya = "font-size:44px;position:absolute;background-color:green;";
-    el.setAttribute("style",styleNya);
-    el.innerHTML = msg;
-    setTimeout(function(){
-        el.parentNode.removeChild(el);
-    },duration);
-    document.body.appendChild(el);
 }
 
 function myPaste(taruhID) {
