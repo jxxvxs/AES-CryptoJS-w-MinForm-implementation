@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta name="viewport" content="width=570; user-scalable=0;" />
+        <title>AES Crypt</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        
+        <script src="script.js"></script>
+        <script src="aescrypt.js"></script>
+        
+        <div class="master">
+            <div class="parent">
+                <h1>AES encrypt/decrypt online using CryptoJS</h1><hr><br>
+                
+                <fieldset class="container">
+                    
+                    <legend>
+                        
+                        <div class="lgnd-anim" style="letter-spacing:2px; border:2px solid #ccc; border-radius:7px; padding:3px;">
+                            <p>
+                                <span class="ecr_ text-in">             &nbsp;ENCODE&nbsp;</span>
+                                <span class="dcr_">                     &nbsp;DECODE&nbsp;</span>
+                            </p>
+                        </div>
+                        
+                    </legend>
+                    
+                    <div class="wrapper">
+                        <label for="text_cr" class="lbl-tb">TEXT</label>
+                        <br />
+                        <div class="frm-ctrl tb tesborder" >
+                            <input id="text_cr" class="inpt" type="text" spellcheck="false" autocomplete="off" placeholder="&nbsp;" />
+                            <div class="clr">
+                                <div>
+                                    <i onclick="clearT('#text_cr')" class="gg-close"></i>
+                                </div>
+                            </div>       
+                            <div class="mbn">
+                                <div>
+                                    <i onclick="myPaste('text_cr')" class="gg-copy"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hint-anim">
+                            <p>
+                                <span class="ecr_ text-in"> The text that you want to encrypt.</span>
+                                <span class="dcr_">         The text that you want to decrypt.</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="wrapper">
+                        <label for="key_cr" class="lbl-tb">KEY</label>
+                        <br />
+                        <div class="frm-ctrl tb" >
+                            <input id="key_cr" class="inpt" type="text" spellcheck="false" autocomplete="off" value="" placeholder="&nbsp;"/>
+                            <div class="clr">
+                                <div>
+                                    <i onclick="clearT('#key_cr')" class="gg-close"></i>
+                                </div>
+                            </div>       
+                            <div class="mbn">
+                                <div>
+                                    <i onclick="myPaste('text_cr')" class="gg-copy"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hint-anim">
+                            <p>
+                                <span class="ecr_ text-in"> This key will be used to decrypt your text later.</span>
+                                <span class="dcr_">         The result section will be emptied if the key isn't correct.</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="wrapper">
+                        <button id="tombol" onclick="encrypt()" class="frm-ctrl btn tombol-anim" >
+                            <p>
+                                <span class="ecr_ text-in"> Encrypt</span>
+                                <span class="dcr_">         Decrypt</span>
+                            </p>
+                        </button>
+                    </div>
+                    
+                    <div class="wrapper">
+                        <label for="result" class="lbl-tb">RESULT</label>
+                        <br />
+                        <div class="frm-ctrl tb" >
+                            <input id="result" class="inpt" type="text" spellcheck="false" autocomplete="off" placeholder="&nbsp;" readonly />
+                            <div class="clr">
+                                <div>
+                                    <i onclick="clearT('#result')" class="gg-close"></i>
+                                </div>
+                            </div>     
+                            <div class="mbn">
+                                <div>
+                                    <i onclick="myCopy()" class="gg-clipboard"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hint-anim">
+                            <p>
+                                <span class="ecr_ text-in">
+                                    The encrypted text are here! Make sure to store your key for it to be decrypted later.
+                                </span>
+                                <span class="dcr_">
+                                    The decoded text are here, this section will be emptied if the text or key above isn't correct.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </fieldset>
+                
+                <div id="switch-button">
+                    <input type="radio" name="pdmb" id="eb_" onchange="animateT('db_')" checked />
+                    <label for="eb_">ENCODE</label>
+                    <span>&emsp;|&emsp;</span>
+                    <input type="radio" name="pdmb" id="db_"  onchange="animateT('eb_')" />
+                    <label for="db_">DECODE</label>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
