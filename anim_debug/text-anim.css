@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+
+.pesangapenting {color:#202020;background-color:#ccc;border-radius:6px;position:absolute;top: 20%;left: 50%;transform: translate(-50% , -50%);text-align:center;padding:10px;overflow:hidden;
+}
+
+*{  font-weight: 400;
+ 	font-family: 'Poppins', sans-serif;
+ 	box-sizing: border-box;
+}   body{margin:0;background-color: #202020;}
+
+.container{
+    height: 50vh;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+/* bagian tombol */
+.tomboldemo {
+ 	text-align       : center;
+ 	position         : relative;
+ 	z-index          : 2;
+    color            : #eee;
+    background       : transparent;
+    margin           : 5px 0;
+    border           : 3px solid #ccc;
+    border-radius    : 3px;
+    outline          : none;
+    width            : 362px;
+    height           : 60px;
+    text-transform   : uppercase;
+    letter-spacing   : 2px;
+    cursor           : pointer;
+    transition       : all 0.6s
+}
+
+.tomboldemo p                                   , .demotext p {
+	margin           : 0;
+	overflow         : hidden;
+}
+.tomboldemo p span                              , .demotext p span {
+    font-size        : 40px;
+    line-height      : 46px;
+    display          : none;
+}
+
+.tomboldemo:hover {
+    color            : #202020;
+    background       : #ccc;
+}
+
+.tomboldemo:active {
+    border           : 0.1px solid #333;
+}
+
+.bawah p span { font-size:20px; }
+
+
+
+
+
+
+
+
+/* animasinya */
+.tomboldemo p span.text-in                    , .demotext p span.text-in  {
+	display          : block;
+	animation        : textIn .2s ease;
+} /* normally 0.5 ease */
+.tomboldemo p span.text-out                   , .demotext p span.text-out {
+	animation        : textOut .2s ease;
+}
+
+@keyframes textIn{
+	0%{
+		transform    : translateY(100%);
+    }
+	100%{
+		transform    : translateY(0%);
+    }
+}
+@keyframes textOut{
+	0%{
+		transform    : translateY(0%);
+    }
+	100%{
+		transform    : translateY(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+/* radio switch nya */
+#INI_BUTTON_COY input {
+    display          : none;
+}
+
+#INI_BUTTON_COY {
+    text-align       : center;
+    /* border           : 1px solid #ccc; */
+    /* border-radius    : 10px; */
+    color            :#999;
+    user-select      : none;
+}
+
+#INI_BUTTON_COY label {
+    cursor           : pointer;
+    transition       : all 0.6s
+}
+
+#INI_BUTTON_COY input[type="radio"]:checked + label {
+    cursor           : default;
+    color            : #fff;
+}
+
+#INI_BUTTON_COY label:hover {
+    color            : #555;
+    transition       : all 0.6s
+}
+
+

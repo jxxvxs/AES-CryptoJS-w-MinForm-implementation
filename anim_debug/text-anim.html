@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text Animation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="text-anim.css">
+    </head>
+    <body>
+        
+        
+        
+        
+        <section class="container">
+            <button id="tombol" class="tomboldemo" onclick="tmpA('Encrypt')">
+                <p>
+                    <span class="ecr_ text-in">Encrypt</span>
+                    <span class="dcr_">Decrypt</span>
+                </p>
+            </button>
+            
+            
+            
+            
+            <br><br>
+            
+            <div style="text-align:center;color:#ccc;" class="demotext">
+                <p>
+                    <span class="ecr_ text-in"> The text that you want to encrypt.</span>
+                    <span class="dcr_">         The text that you want to decrypt.</span>
+                </p>
+            </div>
+            
+            <br>
+            
+            <div style="text-align:center;color:#ccc;" class="demotext">
+                <p>
+                    <span class="ecr_ text-in"> Encrypt</span>
+                    <span class="dcr_">         Decrypt</span>
+                </p>
+            </div>    
+            
+            <br>
+            
+            <div style="text-align:center;color:#ccc;" class="demotext bawah">
+                <p class="bawah">
+                    <span class="ecr_ text-in">
+                        The encrypted text are here! Make sure to store your key for it to be decrypted later.
+                    </span>
+                    <span class="dcr_">
+                        The decoded text are here, this section will be emptied if the text/key isn't correct.
+                    </span>
+                </p>
+            </div>
+            
+            <br>
+            
+            
+            
+            <div id="INI_BUTTON_COY">
+                <input type="radio" name="pdmb" id="eb_" onchange="animateT('db_')" checked />
+                <label for="eb_">Encrypt</label>
+                <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+                <input type="radio" name="pdmb" id="db_"  onchange="animateT('eb_')" />
+                <label for="db_">Decrypt</label>
+            </div>
+        </section>
+        
+        
+        
+        
+        <script>
+            
+            
+            function animateT(pmb) {
+                
+                if (document.getElementById('eb_').checked){
+                    var first = ".dcr_" , second = ".ecr_";  
+                    document.querySelector('#tombol').onclick = function() {tmpA('Encrypt');};
+                    tmpA('EB check');
+                }
+                else if (document.getElementById('db_').checked){
+                    var first = ".ecr_" , second = ".dcr_"; 
+                    document.querySelector('#tombol').onclick = function() {tmpA('Decrypt');};
+                    tmpA('DB check');
+                }
+                
+                demoTes(first,second);
+                
+                document.getElementById(pmb).disabled=true;
+                setTimeout(function(){
+                    document.getElementById(pmb).disabled=false;
+                },300);
+            }
+            
+            function tmpA(msg) {
+                var el = document.createElement("div");
+                el.setAttribute("class","pesangapenting");
+                el.innerHTML = msg;
+                setTimeout(function(){
+                    el.parentNode.removeChild(el);
+                },800);
+                document.body.appendChild(el);
+                <!-- document.querySelectorAll('.container')[0].appendChild(el); -->
+            }
+            
+            function sleep_(milliseconds) {
+                return new Promise(resolve => setTimeout(resolve, milliseconds));
+            }
+            
+            async function demoTes(par1,par2) {
+                var first  = document.querySelectorAll(par1);
+                var second = document.querySelectorAll(par2);
+                for(var i=0; i<first.length; i++){
+                    first[i].classList.add("text-out");
+                }                
+                await sleep_(100);
+                for(var i=0; i<first.length; i++){
+                    first[i].classList.remove("text-in","text-out");
+                    second[i].classList.add("text-in");  
+                }
+            }
+            
+            
+        </script>
+        
+    </body>
+</html>
