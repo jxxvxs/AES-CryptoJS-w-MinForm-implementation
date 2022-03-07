@@ -1,5 +1,5 @@
-# AES-crypt-w-MinForm-implementation
-Implementation of the recent minimalist form repo, AES Encrypt/Decrypt using HTML + CSS + Pure JavaScript.
+# Crypto-JS-w-MinForm-implementation
+Implementation of the recent minimalist form repo, Encrypt/Decrypt online W/ Crypto JS using HTML + CSS + Pure JavaScript.
 
 ## Resource Used :
 *   [Text Animation](https://www.youtube.com/watch?v=gR0-eb5ncEU&t=11s)
@@ -9,7 +9,7 @@ Implementation of the recent minimalist form repo, AES Encrypt/Decrypt using HTM
 *   [Anim-debug](https://htmlpreview.github.io/?https://github.com/jxxvxs/AES-crypt-w-MinForm-implementation/blob/main/anim_debug/text-anim.html)
 *   And many other sources...
 
-[Live Preview Here ( w/ github.com/htmlpreview )](https://htmlpreview.github.io/?https://github.com/jxxvxs/AES-crypt-w-MinForm-implementation/blob/main/index.html)
+[Live Preview Here ( w/ github.com/htmlpreview )](https://htmlpreview.github.io/?https://github.com/jxxvxs/Crypto-JS-w-MinForm-implementation/blob/main/index.html)
 
 # Disclaimer
 I do not own anything.
