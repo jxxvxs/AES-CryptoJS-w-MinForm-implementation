@@ -1,0 +1,60 @@
+/* animation settings */
+
+@keyframes text_in{
+    0%{
+        transform    : translateY(100%);
+    }
+    100%{
+        transform    : translateY(0%);
+    }
+}
+@keyframes text_Out{
+    0%{
+        transform    : translateY(0%);
+    }
+    100%{
+        transform    : translateY(-100%);
+    }
+}
+
+.tombol-anim p span.text-in  ,
+.lgnd-anim p span.text-in  ,
+.hint-anim p span.text-in {
+    display          : block;
+    animation        : text_in 0.2s ease;
+}
+
+.tombol-anim p span.text-out ,
+.lgnd-anim p span.text-out ,
+.hint-anim p span.text-out {
+    animation        : text_Out .2s ease;
+}
+
+.tombol-anim p ,
+.lgnd-anim p ,
+.hint-anim p {
+    margin           : 0;
+    overflow         : hidden;
+}
+
+.tombol-anim p span ,
+.lgnd-anim p span ,
+.hint-anim p span {
+    display          : none;
+}
+
+.tombol-anim p span {
+    font-size        : 14px;
+    line-height      : 36px;
+}
+
+.hint-anim p span {
+    font-size        : 12px;
+    line-height      : 14px;
+    text-align       : justify;
+}
+
+.lgnd-anim p span {
+    font-size        : 13px;
+    line-height      : 20px;
+}

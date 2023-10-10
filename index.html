@@ -3,12 +3,12 @@
     <head>
         <meta name="viewport" content="width=570; user-scalable=1;" />
         <title>AES Crypt</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         
-        <script src="script.js"></script>
-        <script src="aescrypt.js"></script>
+        <script src="js/aes.js"></script>
+        <script src="js/script.js"></script>
         
         <div class="master">
             <div class="parent">
@@ -34,12 +34,12 @@
                             <input id="text_cr" class="inpt" type="text" spellcheck="false" autocomplete="off" placeholder="&nbsp;" />
                             <div class="clr">
                                 <div>
-                                    <i onclick="clearT('#text_cr')" class="gg-close"></i>
+                                    <i onclick="clearField('#text_cr')" class="gg-close"></i>
                                 </div>
                             </div>       
                             <div class="mbn">
                                 <div>
-                                    <i onclick="myPaste('text_cr')" class="gg-copy"></i>
+                                    <i onclick="pasteField('text_cr')" class="gg-copy"></i>
                                 </div>
                             </div>
                         </div>
@@ -58,12 +58,12 @@
                             <input id="key_cr" class="inpt" type="text" spellcheck="false" autocomplete="off" value="" placeholder="&nbsp;"/>
                             <div class="clr">
                                 <div>
-                                    <i onclick="clearT('#key_cr')" class="gg-close"></i>
+                                    <i onclick="clearField('#key_cr')" class="gg-close"></i>
                                 </div>
                             </div>       
                             <div class="mbn">
                                 <div>
-                                    <i onclick="myPaste('key_cr')" class="gg-copy"></i>
+                                    <i onclick="pasteField('key_cr')" class="gg-copy"></i>
                                 </div>
                             </div>
                         </div>
@@ -91,12 +91,12 @@
                             <input id="result" class="inpt" type="text" spellcheck="false" autocomplete="off" placeholder="&nbsp;" readonly />
                             <div class="clr">
                                 <div>
-                                    <i onclick="clearT('#result')" class="gg-close"></i>
+                                    <i onclick="clearField('#result')" class="gg-close"></i>
                                 </div>
                             </div>     
                             <div class="mbn">
                                 <div>
-                                    <i onclick="myCopy()" class="gg-clipboard"></i>
+                                    <i onclick="copyResult()" class="gg-clipboard"></i>
                                 </div>
                             </div>
                         </div>
