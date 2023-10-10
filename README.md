@@ -9,7 +9,7 @@ Implementation of the recent minimalist form repo, Encrypt/Decrypt using AES loc
 *   [Anim-debug](https://htmlpreview.github.io/?https://github.com/jxxvxs/AES-crypt-w-MinForm-implementation/blob/main/anim_debug/text-anim.html)
 *   And many other sources...
 
-[Live Preview Here ( w/ github.com/htmlpreview )](https://htmlpreview.github.io/?https://github.com/jxxvxs/AES-CryptoJS-w-MinForm-implementation/blob/main/index.html)
+[Live Preview Here ( w/ github.com/htmlpreview )](https://htmlpreview.github.io/?https://github.com/jxxvxs/AES-CryptoJS-w-MinForm-implementation/blob/main/extra.html)
 
 # Disclaimer
 I do not own anything.
